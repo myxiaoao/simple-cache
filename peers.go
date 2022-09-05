@@ -1,5 +1,7 @@
 package simple_cache
 
+import pb "simple-cache/cachepb"
+
 // 在这之前已经实现了流程 ⑴ 和 ⑶，今天实现流程 ⑵，从远程节点获取缓存值。
 // 我们进一步细化流程 ⑵：
 // 使用一致性哈希选择节点        是                                   是
@@ -18,5 +20,6 @@ type PeerPicker interface {
 
 // PeerGetter is the interface that must be implemented by a peer.
 type PeerGetter interface {
-	Get(group string, key string) ([]byte, error)
+	// Get Get(group string, key string) ([]byte, error)
+	Get(in *pb.Request, out *pb.Response) error
 }

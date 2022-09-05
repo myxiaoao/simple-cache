@@ -8,6 +8,7 @@
 - [x] 一致性哈希(hash)
 - [x] 分布式节点
 - [x] 防止缓存击穿
+- [x] 使用 Protobuf 通信
 
 ## License
 
