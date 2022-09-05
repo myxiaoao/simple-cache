@@ -1,5 +1,7 @@
 package lru
 
+// lru 缓存淘汰策略
+
 import "container/list"
 
 // Cache is an LRU cache. It is not safe for concurrent access.
