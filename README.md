@@ -5,6 +5,7 @@
 - [x] LRU 缓存淘汰策略
 - [x] 单机并发缓存
 - [x] HTTP 服务端
+- [x] 一致性哈希(hash)
 
 ## License
 
